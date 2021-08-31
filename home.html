@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>COVID-19</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+</head>
+
+<body style="background-color: black;" onload="fetchdata()">
+    <header>
+        <nav class="navbar navbar-inverse  navbar-fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href=""">COVID-19</a>
+        <button type=" button" class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                    <span class="sr-only">TOGGLE NAVIGATION</span>
+                    <span class="icon-bar" style="background-color: whitesmoke;"></span>
+                    <span class="icon-bar" style="background-color: whitesmoke;"></span>
+                    <span class="icon-bar" style="background-color: whitesmoke;"></span>
+                    </button>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item"><a href='#'>HOME</a></li>
+                            <li class="nav-item"><a href='livetracker.html'>LIVE TRACKER</a></li>
+                            <li class="nav-item"><a href='precautions.html'>PRECAUTIONS</a></li>
+
+                        </ul>
+                    </div>
+            </div>
+
+        </nav>
+        <img src="bg.jpeg">
+    </header>
+
+    <div class="container-fluid world-cases" id="live-tracker">
+
+        <h2
+            style="text-align: center;font-style: italic;margin-top: 30px;color: beige;text-decoration:overline underline red;">
+            WORLD WIDE</h2>
+        <div class="services-section text-center">
+            <div class="services-three-columns">
+                <div class="col-md-4 services-column">
+                    <span class="glyphicon glyphicon-ok icon"></span>
+                    <h5>CONFIRMED</h5>
+                    <p id="world" class="world" style="color:red;"></p>
+                </div>
+                <div class="col-md-4 services-column">
+                    <span class="glyphicon glyphicon-heart icon"></span>
+                    <h5>Active</h5>
+                    <p id="world-recovered" class="world-recovered" style="color:#f1f50a;"></p>
+                </div>
+                <div class="col-md-4 services-column">
+                    <span class="glyphicon glyphicon-remove-circle icon"></span>
+                    <h5>DEATHS</h5>
+                    <p id="world-deaths" class="world-deaths" style="color:red;"></p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar navbar-inverse navbar-static-bottom" style="margin-top: 20px;">
+        <footer class="page-footer font-small  pt-4" style="padding: 10px;">
+            <div class="footer-copyright text-center py-3" style="color: white;">© 2020 Copyright:
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <a href="https://www.instagram.com/jubinkamdar46/?hl=en"
+                    style="text-decoration: none;color: white;">JUBIN KAMDAR</a>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="covid.js"></script>
+
+
+    
+
+</body>
+
+</html>
