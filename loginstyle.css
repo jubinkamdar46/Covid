@@ -9,13 +9,15 @@ html,body{
   display: grid;
   height: 100%;
   width: 100%;
-  place-items: center;
-  background: -webkit-linear-gradient(left, rgb(22, 21, 21), rgb(196, 7, 7));
+  place-items: center start;
+  /* background: -webkit-linear-gradient(left, rgb(22, 21, 21), rgb(196, 7, 7)); */
+  background: url("./loginbg.jpg") no-repeat;
+  background-size: cover;
 }
 
 .wrapper{
   overflow: hidden;
-  max-width: 390px;
+  max-width: 400px;
   background: #fff;
   padding: 30px;
   border-radius: 5px;
